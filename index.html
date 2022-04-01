@@ -13,12 +13,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.donmai.us/original/99/3b/__amon_lord_of_the_mysteries_drawn_by_gin6918__993b93adb645c9adc49488ec1a4bf383.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images8.alphacoders.com/106/thumb-1920-1066910.png" class="d-block w-100"
+                    style="height: 586px;" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://getwalls.io/wallpapers/330911/2020--07--a-silent-voice-4k-8k-2560x1440-free-ultra-hd-pictures-backgrounds-images-pc.jpg"
+                    class="d-block w-100" style="height: 586px;" alt="...">
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container col-6 col-md-6 ">
+            <ul class="navbar-nav d-flex flex-row me-auto mb-2 mb-lg-0 d-flex">
+                <li class="nav-item p-1"><a class=" nav-link" href="#">
+                        <i class="fa-brands fa-facebook text-white"></i>
+                    </a></li>
+                <li class="nav-item p-1"><a class=" nav-link" href="#">
+                        <i class="fa-brands fa-youtube text-white"></i>
+                    </a></li>
+                <li class="nav-item p-1"> <a class=" nav-link" href="#">
+                        <i class="fa-brands fa-reddit text-white"></i>
+                    </a></li>
+                <li class="nav-item p-1"><a class=" nav-link" href="#">
+                        <i class="fa-brands fa-twitter text-white"></i>
+                    </a></li>
+                <li class="nav-item p-1"><a class=" nav-link" href="#">
+                        <i class="fa-brands fa-linkedin text-white"></i>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="container d-flex flex-row-reverse col-6 col-md-6 ">
+            <ul>
+                <button type="button" class="btn btn-outline-warning btn-rounded p-1">
+                    <a href="./signup.html" class="text-light text-decoration-none">Sign up!</a>
+                </button>
+                <button type="button" class="btn btn-outline-warning btn-rounded p-1">
+                    <a href="./signin.html" class="text-light text-decoration-none">Log in!</a>
+                </button>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-success" id="navbar-example2">
         <div class="container-fluid">
             <button class="navbar-toggler border border-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -32,11 +88,15 @@
                         <a href="#" class="nav-link active" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Posts</a>
+                        <a class="nav-link" href="#scrollspyHeading1">Posts</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./signup.html">Signup</a>
-                    </li>
+                    <div class="carvd border border-white rounded-pill d-flex justify-content-center align-items-center"
+                        style="width: 10rem;">
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="checkbox" onclick="setDarkMode()">
+                            <label for="checkbox" class="form-check-label">Dark Mode</label>
+                        </div>
+                    </div>
                 </ul>
                 <form class="d-flex input-group w-auto">
                     <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
@@ -45,49 +105,39 @@
             </div>
         </div>
     </nav>
-    <!-- <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav> -->
+    
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mt-4">
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>Holy guacamole!</strong> have some cookies...<button type="button"
-                        class="btn btn-outline-success" data-bs-dismiss="alert" aria-label="Close">I Agree</button>
-                    <button type="button" class="btn btn-outline-warning" data-bs-dismiss="alert" aria-label="Close">I
-                        Refuse</button>
+            <div class="col-md-12 mt-5">
 
-                </div>
-                <div class="card ">
+                <div class="card mt-4">
                     <div class="card-header">
                         Announcement
                     </div>
                     <div class="card-body d-flex text-center justify-content-center">
                         <div class="w-auto">
                             <h5 class="card-title ">Special announcement</h5>
-                            <p class="card-text ">Click the link blew to get my new book "Traveling to the
-                                North".</p>
-                            <a href="#" class="btn btn-success ">BookStore</a>
+                            <p class="card-text "> Click the link blew to get my new book "The Wandering Inn ".</p>
+                            <a href="https://wanderinginn.com/" class="btn btn-success "> BookStore</a>
                         </div>
                     </div>
                 </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Holy chocolatey cow!</strong> have some cookies...<button type="button"
+                        class="btn btn-outline-success" data-bs-dismiss="alert" aria-label="Close">I Agree</button>
+                    <button type="button" class="btn btn-outline-warning" data-bs-dismiss="alert" aria-label="Close">I
+                        Refuse</button>
+
+                </div>
             </div>
-            <div class="card-header mt-4" style="width: 55%;">
+            
+            <div class=" mt-4 scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar-example2"
+                data-bs-offset="0" tabindex="0" style="width: 80%;">
                 Featured
+                <hr>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
+
+            <div class="card mb-3 me-2" style="max-width: 540px;">
 
                 <div class="row g-0">
 
@@ -106,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-3 " style="max-width: 540px;">
+            <div class="card mb-3  me-2" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="https://s.mxmcdn.net/images-storage/albums5/2/7/4/8/2/2/47228472_500_500.jpg"
@@ -123,7 +173,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-3 mt-4" style="max-width: 540px;">
+            
+            <div class="card mb-3 mt-4 me-2" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="https://media.gq.com/photos/570561017df70101759c6631/master/pass/booksSquare2.jpg"
@@ -161,12 +212,15 @@
                     </div>
                 </div>
             </div>
-            <div class="card-header mt-4" style="width: 55%;">
-                All Posts
+            
+            <div class=" mt-4 scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar-example2"
+                data-bs-offset="0" tabindex="0" style="width: 80%;">
+                <h3 id="scrollspyHeading1">All Posts</h3>
+                <hr>
             </div>
 
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <div class="col shadow">
                     <div class="card h-100">
                         <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
                             class="card-img-top" alt="">
@@ -174,16 +228,15 @@
                             <h5 class="card-title">10 Ways to Avoid Unnecessary Meetings with Asynchronous P2s</h5>
                             <p class="card-text"> The shift to asynchronous work is real. Learn how P2, a tool that
                                 powers internal collaboration at WordPress.com, can help you and your team to
-                                communicate and work together remotely.
+                                communicate and work together remotely. </p>
 
-                            </p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 5 hours ago</small>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col shadow">
                     <div class="card h-100">
                         <img src="https://i.pinimg.com/originals/1e/e5/96/1ee59675db033affe1187f66581b3727.jpg"
                             class="card-img-top" alt="">
@@ -196,13 +249,14 @@
                                 Victorian era world where he sees a world filled with Potions, Divination, Hexes, Tarot
                                 Cards,
                                 Sealed Artifacts… </p>
+                            <a href="./post.html" class="btn btn-primary stretched-link">Read More</a>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 1 days ago</small>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col shadow">
                     <div class="card h-100">
                         <img src="http://www.narayanahealth.org/blog/wp-content/uploads/2020/04/shutterstock_1636552801.jpg"
                             class="card-img-top" alt="">
@@ -217,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col shadow">
                     <div class="card h-100">
                         <img src="https://images.saymedia-content.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cq_auto:eco%2Cw_1200/MTc0MjA4NDY3NTMwNjIyODQ0/8-steps-to-get-over-a-long-term-relationship.png"
                             class="card-img-top" alt="">
@@ -233,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col shadow">
                     <div class="card h-100">
                         <img src="https://www.thespruce.com/thmb/iFHoMCWrH8vw7QPec21kCt6ki78=/1920x1920/smart/filters:no_upscale()/how-to-create-daily-routine-hero-9abc3e09a46b49fe85b7038f65a5abbc.jpg"
                             class="card-img-top" alt="">
@@ -248,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col shadow">
                     <div class="card h-100">
                         <img src="https://idreamcareer.com/wp-content/uploads/2020/04/Career-Counselling-1.jpg"
                             class="card-img-top" alt="">
@@ -264,7 +318,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col shadow">
                     <div class="card h-100">
                         <img src="https://www.asicentral.com/media/31534/inspirationalquote-616.jpg"
                             class="card-img-top" alt="">
@@ -279,7 +333,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col shadow">
                     <div class="card h-100">
                         <img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/best-diet-plans-1296x728-feature.jpg"
                             class="card-img-top" alt="">
@@ -296,7 +350,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col shadow">
                     <div class="card h-100">
                         <img src="https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-istanbul-turkey.jpg"
                             class="card-img-top" alt="">
@@ -353,10 +407,49 @@
         </div>
 
     </footer>
+    <!-- <a href="#" style="z-index: 999;
+    padding: 10px 12px;
+    text-align: center;
+    background: #4a5969;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 75px;
+    right: 15px;
+    display: inline;"><span class="fas fa-angle-up"> </span>
+    </a> -->
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
 
+    <script src="main.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script>
+        if (localStorage.getItem('theme') == 'dark') {
+            setDarkMode();
+            if (document.getElementById('checkbox').checked) {
+                localStorage.setItem('checkbox', true)
+            }
+        }
+
+        function setDarkMode() {
+            let isDark = document.body.classList.toggle('darkmode');
+            if (isDark) {
+                setDarkMode.checked = true;
+                localStorage.setItem('theme', 'dark');
+                document.getElementById('checkbox').setAttribute('checked', 'checked');
+            } else {
+                setDarkMode.checked = true;
+                localStorage.removeItem('theme', 'dark');
+            }
+        }
     </script>
 </body>
 

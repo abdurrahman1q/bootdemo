@@ -17,58 +17,50 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-success" id="navbar-example2">
-            <div class="container-fluid">
-                <button class="navbar-toggler border border-white" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars text-white "></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a href="./index.html" class="navbar-brand">RandomBlogs</a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a href="./index.html" class="nav-link active" aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading1">Posts</a>
-                        </li>
-                        <div class="carvd border border-white rounded-pill d-flex justify-content-center align-items-center"
-                            style="width: 10rem;">
-                            <div class="form-check form-switch">
-                                <input type="checkbox" class="form-check-input" id="checkbox" onclick="setDarkMode()">
-                                <label for="checkbox" class="form-check-label">Dark Mode</label>
-                            </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-success" id="navbar-example2">
+        <div class="container-fluid">
+            <button class="navbar-toggler border border-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white "></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a href="./index.html" class="navbar-brand">RandomBlogs</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">Posts</a>
+                    </li>
+                    <div class="carvd border border-white rounded-pill d-flex justify-content-center align-items-center"
+                        style="width: 10rem;">
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="checkbox" onclick="setDarkMode()">
+                            <label for="checkbox" class="form-check-label">Dark Mode</label>
                         </div>
-                    </ul>
-                    <form class="d-flex input-group w-auto">
-                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                        <button class="btn btn-outline-warning" type="button"
-                            data-bs-ripple-color="dark">Search</button>
-                    </form>
-                </div>
+                    </div>
+                </ul>
+                <form class="d-flex input-group w-auto">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-warning" type="button" data-bs-ripple-color="dark">Search</button>
+                </form>
             </div>
-        </nav>
-    </header>
-    <div class="signup">
+        </div>
+    </nav>
+     <div class="login">
         <div class="container py-5 h-100">
             <div class="row d-flex align-items-center justify-content-center h-100">
-                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Log in</p>
                 <div class="col-md-8 col-lg-7 col-xl-6">
                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
                         class="img-fluid" alt="Phone image">
                 </div>
-
                 <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
                     <form>
                         <div class="form-outline mb-4">
-                            <input type="text" id="name1" class="form-control form-control-lg" placeholder="Your name">
-
-                        </div>
-                        <div class="form-outline  mb-4">
                             <input type="email" id="email1" class="form-control form-control-lg"
-                                placeholder="Your email">
+                                placeholder="Email address">
 
                         </div>
 
@@ -77,24 +69,16 @@
                                 placeholder="Password">
 
                         </div>
-                        <div class="form-outline mb-4">
-                            <input type="password" id="password1" class="form-control form-control-lg"
-                                placeholder="Repeat your password">
-
-                        </div>
-                        <div class=" mb-4">
+                        <div class="d-flex justify-content-around align-items-center mb-4">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" value="" id="check1" checked>
-                                <label class="form-check-label" for="check1">
-                                    I agree all statements in <a href="#!">Terms of service</a>
-                                </label>
-
+                                <label for="check1" class="form-check-label">Remember me</label>
                             </div>
-
+                            <a href=""> Forgot password?</a>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block w-100">Sign up</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block w-100">Sign in</button>
                         <div class="text-center mt-3">
-                            <p>Already a member? <a href="./signin.html">Log in</a></p>
+                            <p>Not a member? <a href="./signup.html">Register</a></p>
 
                         </div>
                         <div class="divider  align-items-center my-4">
@@ -107,7 +91,7 @@
                         <a href="#!" class="btn btn-primary btn-lg btn-block w-100 mb-2 shadow "
                             style="background-color: #55acee;" role="button"><i class="fab fa-twitter me-2"></i>Continue
                             with Twitter</a>
-                        <a href="#!" class="btn btn-primary btn-lg btn-block w-100 shadow hover-shadow-lg "
+                        <a href="#!" class="btn btn-primary btn-lg btn-block w-100 shadow hover-shadow-lg"
                             style="background-color: #1c3468;" role="button"><i
                                 class="fa-brands fa-google me-2"></i>Continue with Google</a>
 
@@ -116,7 +100,6 @@
             </div>
         </div>
     </div>
-
     <footer class="text-center text-white bg-success mt-5">
 
         <div class="container p-4 pb-0">
@@ -170,8 +153,6 @@
             }
         }
     </script>
-
-
 </body>
 
 </html>
